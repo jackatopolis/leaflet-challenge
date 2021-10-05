@@ -45,7 +45,6 @@ d3.json(url).then(function(response) {
         }
       };
     
-
     var url2 = "tectonic.json";
 
     d3.json(url2).then(function(tec) {
@@ -72,7 +71,6 @@ d3.json(url).then(function(response) {
             )    
         };
 
-
     // Create overlay groups
     var quakes = L.layerGroup(quakeMarkers);
     var tectonic = L.layerGroup(tectonicMarkers);
@@ -91,8 +89,8 @@ d3.json(url).then(function(response) {
 
     // Define a map object.
     var myMap = L.map("map", {
-        center: [37.09, -95.71],
-        zoom: 5,
+        center: [37.09, -120],
+        zoom: 6,
         layers: [street, quakes, tectonic]
     });
     
@@ -101,7 +99,6 @@ d3.json(url).then(function(response) {
     L.control.layers(baseMaps, overlayMaps, {
         collapsed: false
     }).addTo(myMap);
-
 
     // Add legend to map
     var legend = L.control({position: 'bottomright'});

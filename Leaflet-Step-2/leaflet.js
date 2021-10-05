@@ -88,7 +88,7 @@ d3.json(url).then(function(response) {
     };
 
     // Define a map object.
-    var myMap = L.map("map", {
+    let myMap = L.map("map", {
         center: [37.09, -120],
         zoom: 6,
         layers: [street, quakes, tectonic]

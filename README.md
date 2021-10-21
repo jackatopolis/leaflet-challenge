@@ -1,4 +1,4 @@
-# leaflet-challenge
+# Visualizing Earthquake Data with Leaflet
 
 Published: https://jackatopolis.github.io/leaflet-challenge/
 
